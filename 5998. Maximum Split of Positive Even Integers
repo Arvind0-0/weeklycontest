@@ -1,0 +1,13 @@
+class Solution:
+    def maximumEvenSplit(self, finalSum: int) -> List[int]:
+        arr = []
+        x= 2
+        if finalSum % 2 == 0:
+            while finalSum >0:
+                finalSum =finalSum-x
+                arr.append(x)
+                x+=2
+            
+        if -finalSum in arr:
+            arr.remove(-finalSum)
+        return arr
