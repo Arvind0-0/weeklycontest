@@ -1,0 +1,11 @@
+class Solution:
+    def prefixCount(self, words: List[str], pref: str) -> int:
+        count = 0
+        non_empty_string = ""
+        for me in range(0, len(words)):
+            non_empty_string = words[me] 
+            if (non_empty_string.startswith(pref)):
+                count+=1
+            else:
+                pass
+        return (count)
